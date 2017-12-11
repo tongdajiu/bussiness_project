@@ -1,0 +1,38 @@
+<?php
+define('HN1', true);
+require_once('global.php');
+
+include "common.php";	//设置只能用微信窗口打开
+
+$UserModel = D('User');
+$IntegralPayModel = D('IntegralPay');
+$IntegralRecordModel = D('IntegralRecord');
+
+$user = $_SESSION['userInfo'];
+if($user != null){
+	$userid = $user->id;
+}else{
+	redirect("login.php?dir=user");
+	return;
+}
+
+$page = isset($_REQUEST['page']) ? intval($_REQUEST['page']) : 1;
+
+$sql = "select c.integral,c.type,c.addtime,c.color from ".
+			  "(select '1' color,concat('-',a.integral) integral,a.type type,a.addtime addtime FROM ".T('integral_pay')." as a where a.userid='".$userid."' ".
+			  "UNION all ".
+			  "select '2' color,concat('+',b.integral) integral,b.type type,b.addtime addtime FROM ".T('integral_record')." as b where b.userid='".$userid."') ".
+			  "as c order by c.addtime desc";
+
+$pager_all = $UserModel->query($sql,false,true,$page,15);
+
+$pager_pay = $IntegralPayModel->gets(array('userid'=>$userid),array('id'=>'desc'),$page,15);
+
+$pager_records = $IntegralRecordModel->gets(array('userid'=>$userid),array('id'=>'desc'),$page,15);
+
+$obj = $UserModel->get(array('id'=>$userid));
+ 
+
+
+include TEMPLATE_DIR.'/integral_web.php';
+?>

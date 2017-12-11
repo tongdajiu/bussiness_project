@@ -1,0 +1,8 @@
+[2017-04-29 16:36:54] 发送模板消息失败
+Array
+(
+    [openid] => 123ABC12345
+    [errcode] => 40001
+    [errmsg] => no access
+)
+

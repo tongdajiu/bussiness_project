@@ -1,0 +1,1626 @@
+@charset "UTF-8";.animated { - abapsoft - animation - duration: 1s;
+    animation - duration: 1s; - abapsoft - animation - fill - mode: both;
+    animation - fill - mode: both
+}.animated.hinge { - abapsoft - animation - duration: 2s;
+    animation - duration: 2s
+}@ - abapsoft - keyframes bounce {
+    0 % ,
+    20 % ,
+    50 % ,
+    80 % ,
+    100 % { - abapsoft - transform: translateY(0);
+        transform: translateY(0)
+    }
+    40 % { - abapsoft - transform: translateY( - 30px);
+        transform: translateY( - 30px)
+    }
+    60 % { - abapsoft - transform: translateY( - 15px);
+        transform: translateY( - 15px)
+    }
+}@keyframes bounce {
+    0 % ,
+    20 % ,
+    50 % ,
+    80 % ,
+    100 % { - abapsoft - transform: translateY(0); - ms - transform: translateY(0);
+        transform: translateY(0)
+    }
+    40 % { - abapsoft - transform: translateY( - 30px); - ms - transform: translateY( - 30px);
+        transform: translateY( - 30px)
+    }
+    60 % { - abapsoft - transform: translateY( - 15px); - ms - transform: translateY( - 15px);
+        transform: translateY( - 15px)
+    }
+}.bounce { - abapsoft - animation - name: bounce;
+    animation - name: bounce
+}@ - abapsoft - keyframes flash {
+    0 % ,
+    50 % ,
+    100 % {
+        opacity: 1
+    }
+    25 % ,
+    75 % {
+        opacity: 0
+    }
+}@keyframes flash {
+    0 % ,
+    50 % ,
+    100 % {
+        opacity: 1
+    }
+    25 % ,
+    75 % {
+        opacity: 0
+    }
+}.flash { - abapsoft - animation - name: flash;
+    animation - name: flash
+}@ - abapsoft - keyframes pulse {
+    0 % { - abapsoft - transform: scale(1);
+        transform: scale(1)
+    }
+    50 % { - abapsoft - transform: scale(1.1);
+        transform: scale(1.1)
+    }
+    100 % { - abapsoft - transform: scale(1);
+        transform: scale(1)
+    }
+}@keyframes pulse {
+    0 % { - abapsoft - transform: scale(1); - ms - transform: scale(1);
+        transform: scale(1)
+    }
+    50 % { - abapsoft - transform: scale(1.1); - ms - transform: scale(1.1);
+        transform: scale(1.1)
+    }
+    100 % { - abapsoft - transform: scale(1); - ms - transform: scale(1);
+        transform: scale(1)
+    }
+}.pulse { - abapsoft - animation - name: pulse;
+    animation - name: pulse
+}@ - abapsoft - keyframes shake {
+    0 % ,
+    100 % { - abapsoft - transform: translateX(0);
+        transform: translateX(0)
+    }
+    10 % ,
+    30 % ,
+    50 % ,
+    70 % ,
+    90 % { - abapsoft - transform: translateX( - 10px);
+        transform: translateX( - 10px)
+    }
+    20 % ,
+    40 % ,
+    60 % ,
+    80 % { - abapsoft - transform: translateX(10px);
+        transform: translateX(10px)
+    }
+}@keyframes shake {
+    0 % ,
+    100 % { - abapsoft - transform: translateX(0); - ms - transform: translateX(0);
+        transform: translateX(0)
+    }
+    10 % ,
+    30 % ,
+    50 % ,
+    70 % ,
+    90 % { - abapsoft - transform: translateX( - 10px); - ms - transform: translateX( - 10px);
+        transform: translateX( - 10px)
+    }
+    20 % ,
+    40 % ,
+    60 % ,
+    80 % { - abapsoft - transform: translateX(10px); - ms - transform: translateX(10px);
+        transform: translateX(10px)
+    }
+}.shake { - abapsoft - animation - name: shake;
+    animation - name: shake
+}@ - abapsoft - keyframes swing {
+    20 % { - abapsoft - transform: rotate(15deg);
+        transform: rotate(15deg)
+    }
+    40 % { - abapsoft - transform: rotate( - 10deg);
+        transform: rotate( - 10deg)
+    }
+    60 % { - abapsoft - transform: rotate(5deg);
+        transform: rotate(5deg)
+    }
+    80 % { - abapsoft - transform: rotate( - 5deg);
+        transform: rotate( - 5deg)
+    }
+    100 % { - abapsoft - transform: rotate(0);
+        transform: rotate(0)
+    }
+}@keyframes swing {
+    20 % { - abapsoft - transform: rotate(15deg); - ms - transform: rotate(15deg);
+        transform: rotate(15deg)
+    }
+    40 % { - abapsoft - transform: rotate( - 10deg); - ms - transform: rotate( - 10deg);
+        transform: rotate( - 10deg)
+    }
+    60 % { - abapsoft - transform: rotate(5deg); - ms - transform: rotate(5deg);
+        transform: rotate(5deg)
+    }
+    80 % { - abapsoft - transform: rotate( - 5deg); - ms - transform: rotate( - 5deg);
+        transform: rotate( - 5deg)
+    }
+    100 % { - abapsoft - transform: rotate(0); - ms - transform: rotate(0);
+        transform: rotate(0)
+    }
+}.swing { - abapsoft - transform - origin: top center; - ms - transform - origin: top center;
+    transform - origin: top center; - abapsoft - animation - name: swing;
+    animation - name: swing
+}@ - abapsoft - keyframes tada {
+    0 % { - abapsoft - transform: scale(1);
+        transform: scale(1)
+    }
+    10 % ,
+    20 % { - abapsoft - transform: scale(.9) rotate( - 3deg);
+        transform: scale(.9) rotate( - 3deg)
+    }
+    30 % ,
+    50 % ,
+    70 % ,
+    90 % { - abapsoft - transform: scale(1.1) rotate(3deg);
+        transform: scale(1.1) rotate(3deg)
+    }
+    40 % ,
+    60 % ,
+    80 % { - abapsoft - transform: scale(1.1) rotate( - 3deg);
+        transform: scale(1.1) rotate( - 3deg)
+    }
+    100 % { - abapsoft - transform: scale(1) rotate(0);
+        transform: scale(1) rotate(0)
+    }
+}@keyframes tada {
+    0 % { - abapsoft - transform: scale(1); - ms - transform: scale(1);
+        transform: scale(1)
+    }
+    10 % ,
+    20 % { - abapsoft - transform: scale(.9) rotate( - 3deg); - ms - transform: scale(.9) rotate( - 3deg);
+        transform: scale(.9) rotate( - 3deg)
+    }
+    30 % ,
+    50 % ,
+    70 % ,
+    90 % { - abapsoft - transform: scale(1.1) rotate(3deg); - ms - transform: scale(1.1) rotate(3deg);
+        transform: scale(1.1) rotate(3deg)
+    }
+    40 % ,
+    60 % ,
+    80 % { - abapsoft - transform: scale(1.1) rotate( - 3deg); - ms - transform: scale(1.1) rotate( - 3deg);
+        transform: scale(1.1) rotate( - 3deg)
+    }
+    100 % { - abapsoft - transform: scale(1) rotate(0); - ms - transform: scale(1) rotate(0);
+        transform: scale(1) rotate(0)
+    }
+}.tada { - abapsoft - animation - name: tada;
+    animation - name: tada
+}@ - abapsoft - keyframes wobble {
+    0 % { - abapsoft - transform: translateX(0 % );
+        transform: translateX(0 % )
+    }
+    15 % { - abapsoft - transform: translateX( - 25 % ) rotate( - 5deg);
+        transform: translateX( - 25 % ) rotate( - 5deg)
+    }
+    30 % { - abapsoft - transform: translateX(20 % ) rotate(3deg);
+        transform: translateX(20 % ) rotate(3deg)
+    }
+    45 % { - abapsoft - transform: translateX( - 15 % ) rotate( - 3deg);
+        transform: translateX( - 15 % ) rotate( - 3deg)
+    }
+    60 % { - abapsoft - transform: translateX(10 % ) rotate(2deg);
+        transform: translateX(10 % ) rotate(2deg)
+    }
+    75 % { - abapsoft - transform: translateX( - 5 % ) rotate( - 1deg);
+        transform: translateX( - 5 % ) rotate( - 1deg)
+    }
+    100 % { - abapsoft - transform: translateX(0 % );
+        transform: translateX(0 % )
+    }
+}@keyframes wobble {
+    0 % { - abapsoft - transform: translateX(0 % ); - ms - transform: translateX(0 % );
+        transform: translateX(0 % )
+    }
+    15 % { - abapsoft - transform: translateX( - 25 % ) rotate( - 5deg); - ms - transform: translateX( - 25 % ) rotate( - 5deg);
+        transform: translateX( - 25 % ) rotate( - 5deg)
+    }
+    30 % { - abapsoft - transform: translateX(20 % ) rotate(3deg); - ms - transform: translateX(20 % ) rotate(3deg);
+        transform: translateX(20 % ) rotate(3deg)
+    }
+    45 % { - abapsoft - transform: translateX( - 15 % ) rotate( - 3deg); - ms - transform: translateX( - 15 % ) rotate( - 3deg);
+        transform: translateX( - 15 % ) rotate( - 3deg)
+    }
+    60 % { - abapsoft - transform: translateX(10 % ) rotate(2deg); - ms - transform: translateX(10 % ) rotate(2deg);
+        transform: translateX(10 % ) rotate(2deg)
+    }
+    75 % { - abapsoft - transform: translateX( - 5 % ) rotate( - 1deg); - ms - transform: translateX( - 5 % ) rotate( - 1deg);
+        transform: translateX( - 5 % ) rotate( - 1deg)
+    }
+    100 % { - abapsoft - transform: translateX(0 % ); - ms - transform: translateX(0 % );
+        transform: translateX(0 % )
+    }
+}.wobble { - abapsoft - animation - name: wobble;
+    animation - name: wobble
+}@ - abapsoft - keyframes bounceIn {
+    0 % {
+        opacity: 0; - abapsoft - transform: scale(.3);
+        transform: scale(.3)
+    }
+    50 % {
+        opacity: 1; - abapsoft - transform: scale(1.05);
+        transform: scale(1.05)
+    }
+    70 % { - abapsoft - transform: scale(.9);
+        transform: scale(.9)
+    }
+    100 % { - abapsoft - transform: scale(1);
+        transform: scale(1)
+    }
+}@keyframes bounceIn {
+    0 % {
+        opacity: 0; - abapsoft - transform: scale(.3); - ms - transform: scale(.3);
+        transform: scale(.3)
+    }
+    50 % {
+        opacity: 1; - abapsoft - transform: scale(1.05); - ms - transform: scale(1.05);
+        transform: scale(1.05)
+    }
+    70 % { - abapsoft - transform: scale(.9); - ms - transform: scale(.9);
+        transform: scale(.9)
+    }
+    100 % { - abapsoft - transform: scale(1); - ms - transform: scale(1);
+        transform: scale(1)
+    }
+}.bounceIn { - abapsoft - animation - name: bounceIn;
+    animation - name: bounceIn
+}@ - abapsoft - keyframes bounceInDown {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateY( - 2000px);
+        transform: translateY( - 2000px)
+    }
+    60 % {
+        opacity: 1; - abapsoft - transform: translateY(30px);
+        transform: translateY(30px)
+    }
+    80 % { - abapsoft - transform: translateY( - 10px);
+        transform: translateY( - 10px)
+    }
+    100 % { - abapsoft - transform: translateY(0);
+        transform: translateY(0)
+    }
+}@keyframes bounceInDown {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateY( - 2000px); - ms - transform: translateY( - 2000px);
+        transform: translateY( - 2000px)
+    }
+    60 % {
+        opacity: 1; - abapsoft - transform: translateY(30px); - ms - transform: translateY(30px);
+        transform: translateY(30px)
+    }
+    80 % { - abapsoft - transform: translateY( - 10px); - ms - transform: translateY( - 10px);
+        transform: translateY( - 10px)
+    }
+    100 % { - abapsoft - transform: translateY(0); - ms - transform: translateY(0);
+        transform: translateY(0)
+    }
+}.bounceInDown { - abapsoft - animation - name: bounceInDown;
+    animation - name: bounceInDown
+}@ - abapsoft - keyframes bounceInLeft {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateX( - 2000px);
+        transform: translateX( - 2000px)
+    }
+    60 % {
+        opacity: 1; - abapsoft - transform: translateX(30px);
+        transform: translateX(30px)
+    }
+    80 % { - abapsoft - transform: translateX( - 10px);
+        transform: translateX( - 10px)
+    }
+    100 % { - abapsoft - transform: translateX(0);
+        transform: translateX(0)
+    }
+}@keyframes bounceInLeft {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateX( - 2000px); - ms - transform: translateX( - 2000px);
+        transform: translateX( - 2000px)
+    }
+    60 % {
+        opacity: 1; - abapsoft - transform: translateX(30px); - ms - transform: translateX(30px);
+        transform: translateX(30px)
+    }
+    80 % { - abapsoft - transform: translateX( - 10px); - ms - transform: translateX( - 10px);
+        transform: translateX( - 10px)
+    }
+    100 % { - abapsoft - transform: translateX(0); - ms - transform: translateX(0);
+        transform: translateX(0)
+    }
+}.bounceInLeft { - abapsoft - animation - name: bounceInLeft;
+    animation - name: bounceInLeft
+}@ - abapsoft - keyframes bounceInRight {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateX(2000px);
+        transform: translateX(2000px)
+    }
+    60 % {
+        opacity: 1; - abapsoft - transform: translateX( - 30px);
+        transform: translateX( - 30px)
+    }
+    80 % { - abapsoft - transform: translateX(10px);
+        transform: translateX(10px)
+    }
+    100 % { - abapsoft - transform: translateX(0);
+        transform: translateX(0)
+    }
+}@keyframes bounceInRight {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateX(2000px); - ms - transform: translateX(2000px);
+        transform: translateX(2000px)
+    }
+    60 % {
+        opacity: 1; - abapsoft - transform: translateX( - 30px); - ms - transform: translateX( - 30px);
+        transform: translateX( - 30px)
+    }
+    80 % { - abapsoft - transform: translateX(10px); - ms - transform: translateX(10px);
+        transform: translateX(10px)
+    }
+    100 % { - abapsoft - transform: translateX(0); - ms - transform: translateX(0);
+        transform: translateX(0)
+    }
+}.bounceInRight { - abapsoft - animation - name: bounceInRight;
+    animation - name: bounceInRight
+}@ - abapsoft - keyframes bounceInUp {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateY(2000px);
+        transform: translateY(2000px)
+    }
+    60 % {
+        opacity: 1; - abapsoft - transform: translateY( - 30px);
+        transform: translateY( - 30px)
+    }
+    80 % { - abapsoft - transform: translateY(10px);
+        transform: translateY(10px)
+    }
+    100 % { - abapsoft - transform: translateY(0);
+        transform: translateY(0)
+    }
+}@keyframes bounceInUp {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateY(2000px); - ms - transform: translateY(2000px);
+        transform: translateY(2000px)
+    }
+    60 % {
+        opacity: 1; - abapsoft - transform: translateY( - 30px); - ms - transform: translateY( - 30px);
+        transform: translateY( - 30px)
+    }
+    80 % { - abapsoft - transform: translateY(10px); - ms - transform: translateY(10px);
+        transform: translateY(10px)
+    }
+    100 % { - abapsoft - transform: translateY(0); - ms - transform: translateY(0);
+        transform: translateY(0)
+    }
+}.bounceInUp { - abapsoft - animation - name: bounceInUp;
+    animation - name: bounceInUp
+}@ - abapsoft - keyframes bounceOut {
+    0 % { - abapsoft - transform: scale(1);
+        transform: scale(1)
+    }
+    25 % { - abapsoft - transform: scale(.95);
+        transform: scale(.95)
+    }
+    50 % {
+        opacity: 1; - abapsoft - transform: scale(1.1);
+        transform: scale(1.1)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: scale(.3);
+        transform: scale(.3)
+    }
+}@keyframes bounceOut {
+    0 % { - abapsoft - transform: scale(1); - ms - transform: scale(1);
+        transform: scale(1)
+    }
+    25 % { - abapsoft - transform: scale(.95); - ms - transform: scale(.95);
+        transform: scale(.95)
+    }
+    50 % {
+        opacity: 1; - abapsoft - transform: scale(1.1); - ms - transform: scale(1.1);
+        transform: scale(1.1)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: scale(.3); - ms - transform: scale(.3);
+        transform: scale(.3)
+    }
+}.bounceOut { - abapsoft - animation - name: bounceOut;
+    animation - name: bounceOut
+}@ - abapsoft - keyframes bounceOutDown {
+    0 % { - abapsoft - transform: translateY(0);
+        transform: translateY(0)
+    }
+    20 % {
+        opacity: 1; - abapsoft - transform: translateY( - 20px);
+        transform: translateY( - 20px)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateY(2000px);
+        transform: translateY(2000px)
+    }
+}@keyframes bounceOutDown {
+    0 % { - abapsoft - transform: translateY(0); - ms - transform: translateY(0);
+        transform: translateY(0)
+    }
+    20 % {
+        opacity: 1; - abapsoft - transform: translateY( - 20px); - ms - transform: translateY( - 20px);
+        transform: translateY( - 20px)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateY(2000px); - ms - transform: translateY(2000px);
+        transform: translateY(2000px)
+    }
+}.bounceOutDown { - abapsoft - animation - name: bounceOutDown;
+    animation - name: bounceOutDown
+}@ - abapsoft - keyframes bounceOutLeft {
+    0 % { - abapsoft - transform: translateX(0);
+        transform: translateX(0)
+    }
+    20 % {
+        opacity: 1; - abapsoft - transform: translateX(20px);
+        transform: translateX(20px)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateX( - 2000px);
+        transform: translateX( - 2000px)
+    }
+}@keyframes bounceOutLeft {
+    0 % { - abapsoft - transform: translateX(0); - ms - transform: translateX(0);
+        transform: translateX(0)
+    }
+    20 % {
+        opacity: 1; - abapsoft - transform: translateX(20px); - ms - transform: translateX(20px);
+        transform: translateX(20px)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateX( - 2000px); - ms - transform: translateX( - 2000px);
+        transform: translateX( - 2000px)
+    }
+}.bounceOutLeft { - abapsoft - animation - name: bounceOutLeft;
+    animation - name: bounceOutLeft
+}@ - abapsoft - keyframes bounceOutRight {
+    0 % { - abapsoft - transform: translateX(0);
+        transform: translateX(0)
+    }
+    20 % {
+        opacity: 1; - abapsoft - transform: translateX( - 20px);
+        transform: translateX( - 20px)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateX(2000px);
+        transform: translateX(2000px)
+    }
+}@keyframes bounceOutRight {
+    0 % { - abapsoft - transform: translateX(0); - ms - transform: translateX(0);
+        transform: translateX(0)
+    }
+    20 % {
+        opacity: 1; - abapsoft - transform: translateX( - 20px); - ms - transform: translateX( - 20px);
+        transform: translateX( - 20px)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateX(2000px); - ms - transform: translateX(2000px);
+        transform: translateX(2000px)
+    }
+}.bounceOutRight { - abapsoft - animation - name: bounceOutRight;
+    animation - name: bounceOutRight
+}@ - abapsoft - keyframes bounceOutUp {
+    0 % { - abapsoft - transform: translateY(0);
+        transform: translateY(0)
+    }
+    20 % {
+        opacity: 1; - abapsoft - transform: translateY(20px);
+        transform: translateY(20px)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateY( - 2000px);
+        transform: translateY( - 2000px)
+    }
+}@keyframes bounceOutUp {
+    0 % { - abapsoft - transform: translateY(0); - ms - transform: translateY(0);
+        transform: translateY(0)
+    }
+    20 % {
+        opacity: 1; - abapsoft - transform: translateY(20px); - ms - transform: translateY(20px);
+        transform: translateY(20px)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateY( - 2000px); - ms - transform: translateY( - 2000px);
+        transform: translateY( - 2000px)
+    }
+}.bounceOutUp { - abapsoft - animation - name: bounceOutUp;
+    animation - name: bounceOutUp
+}@ - abapsoft - keyframes fadeIn {
+    0 % {
+        opacity: 0
+    }
+    100 % {
+        opacity: 1
+    }
+}@keyframes fadeIn {
+    0 % {
+        opacity: 0
+    }
+    100 % {
+        opacity: 1
+    }
+}.fadeIn { - abapsoft - animation - name: fadeIn;
+    animation - name: fadeIn
+}@ - abapsoft - keyframes fadeInDown {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateY( - 20px);
+        transform: translateY( - 20px)
+    }
+    100 % {
+        opacity: 1; - abapsoft - transform: translateY(0);
+        transform: translateY(0)
+    }
+}@keyframes fadeInDown {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateY( - 20px); - ms - transform: translateY( - 20px);
+        transform: translateY( - 20px)
+    }
+    100 % {
+        opacity: 1; - abapsoft - transform: translateY(0); - ms - transform: translateY(0);
+        transform: translateY(0)
+    }
+}.fadeInDown { - abapsoft - animation - name: fadeInDown;
+    animation - name: fadeInDown
+}@ - abapsoft - keyframes fadeInDownBig {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateY( - 2000px);
+        transform: translateY( - 2000px)
+    }
+    100 % {
+        opacity: 1; - abapsoft - transform: translateY(0);
+        transform: translateY(0)
+    }
+}@keyframes fadeInDownBig {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateY( - 2000px); - ms - transform: translateY( - 2000px);
+        transform: translateY( - 2000px)
+    }
+    100 % {
+        opacity: 1; - abapsoft - transform: translateY(0); - ms - transform: translateY(0);
+        transform: translateY(0)
+    }
+}.fadeInDownBig { - abapsoft - animation - name: fadeInDownBig;
+    animation - name: fadeInDownBig
+}@ - abapsoft - keyframes fadeInLeft {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateX( - 20px);
+        transform: translateX( - 20px)
+    }
+    100 % {
+        opacity: 1; - abapsoft - transform: translateX(0);
+        transform: translateX(0)
+    }
+}@keyframes fadeInLeft {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateX( - 20px); - ms - transform: translateX( - 20px);
+        transform: translateX( - 20px)
+    }
+    100 % {
+        opacity: 1; - abapsoft - transform: translateX(0); - ms - transform: translateX(0);
+        transform: translateX(0)
+    }
+}.fadeInLeft { - abapsoft - animation - name: fadeInLeft;
+    animation - name: fadeInLeft
+}@ - abapsoft - keyframes fadeInLeftBig {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateX( - 2000px);
+        transform: translateX( - 2000px)
+    }
+    100 % {
+        opacity: 1; - abapsoft - transform: translateX(0);
+        transform: translateX(0)
+    }
+}@keyframes fadeInLeftBig {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateX( - 2000px); - ms - transform: translateX( - 2000px);
+        transform: translateX( - 2000px)
+    }
+    100 % {
+        opacity: 1; - abapsoft - transform: translateX(0); - ms - transform: translateX(0);
+        transform: translateX(0)
+    }
+}.fadeInLeftBig { - abapsoft - animation - name: fadeInLeftBig;
+    animation - name: fadeInLeftBig
+}@ - abapsoft - keyframes fadeInRight {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateX(20px);
+        transform: translateX(20px)
+    }
+    100 % {
+        opacity: 1; - abapsoft - transform: translateX(0);
+        transform: translateX(0)
+    }
+}@keyframes fadeInRight {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateX(20px); - ms - transform: translateX(20px);
+        transform: translateX(20px)
+    }
+    100 % {
+        opacity: 1; - abapsoft - transform: translateX(0); - ms - transform: translateX(0);
+        transform: translateX(0)
+    }
+}.fadeInRight { - abapsoft - animation - name: fadeInRight;
+    animation - name: fadeInRight
+}@ - abapsoft - keyframes fadeInRightBig {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateX(2000px);
+        transform: translateX(2000px)
+    }
+    100 % {
+        opacity: 1; - abapsoft - transform: translateX(0);
+        transform: translateX(0)
+    }
+}@keyframes fadeInRightBig {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateX(2000px); - ms - transform: translateX(2000px);
+        transform: translateX(2000px)
+    }
+    100 % {
+        opacity: 1; - abapsoft - transform: translateX(0); - ms - transform: translateX(0);
+        transform: translateX(0)
+    }
+}.fadeInRightBig { - abapsoft - animation - name: fadeInRightBig;
+    animation - name: fadeInRightBig
+}@ - abapsoft - keyframes fadeInUp {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateY(20px);
+        transform: translateY(20px)
+    }
+    100 % {
+        opacity: 1; - abapsoft - transform: translateY(0);
+        transform: translateY(0)
+    }
+}@keyframes fadeInUp {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateY(20px); - ms - transform: translateY(20px);
+        transform: translateY(20px)
+    }
+    100 % {
+        opacity: 1; - abapsoft - transform: translateY(0); - ms - transform: translateY(0);
+        transform: translateY(0)
+    }
+}.fadeInUp { - abapsoft - animation - name: fadeInUp;
+    animation - name: fadeInUp
+}@ - abapsoft - keyframes fadeInUpBig {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateY(2000px);
+        transform: translateY(2000px)
+    }
+    100 % {
+        opacity: 1; - abapsoft - transform: translateY(0);
+        transform: translateY(0)
+    }
+}@keyframes fadeInUpBig {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateY(2000px); - ms - transform: translateY(2000px);
+        transform: translateY(2000px)
+    }
+    100 % {
+        opacity: 1; - abapsoft - transform: translateY(0); - ms - transform: translateY(0);
+        transform: translateY(0)
+    }
+}.fadeInUpBig { - abapsoft - animation - name: fadeInUpBig;
+    animation - name: fadeInUpBig
+}@ - abapsoft - keyframes fadeOut {
+    0 % {
+        opacity: 1
+    }
+    100 % {
+        opacity: 0
+    }
+}@keyframes fadeOut {
+    0 % {
+        opacity: 1
+    }
+    100 % {
+        opacity: 0
+    }
+}.fadeOut { - abapsoft - animation - name: fadeOut;
+    animation - name: fadeOut
+}@ - abapsoft - keyframes fadeOutDown {
+    0 % {
+        opacity: 1; - abapsoft - transform: translateY(0);
+        transform: translateY(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateY(20px);
+        transform: translateY(20px)
+    }
+}@keyframes fadeOutDown {
+    0 % {
+        opacity: 1; - abapsoft - transform: translateY(0); - ms - transform: translateY(0);
+        transform: translateY(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateY(20px); - ms - transform: translateY(20px);
+        transform: translateY(20px)
+    }
+}.fadeOutDown { - abapsoft - animation - name: fadeOutDown;
+    animation - name: fadeOutDown
+}@ - abapsoft - keyframes fadeOutDownBig {
+    0 % {
+        opacity: 1; - abapsoft - transform: translateY(0);
+        transform: translateY(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateY(2000px);
+        transform: translateY(2000px)
+    }
+}@keyframes fadeOutDownBig {
+    0 % {
+        opacity: 1; - abapsoft - transform: translateY(0); - ms - transform: translateY(0);
+        transform: translateY(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateY(2000px); - ms - transform: translateY(2000px);
+        transform: translateY(2000px)
+    }
+}.fadeOutDownBig { - abapsoft - animation - name: fadeOutDownBig;
+    animation - name: fadeOutDownBig
+}@ - abapsoft - keyframes fadeOutLeft {
+    0 % {
+        opacity: 1; - abapsoft - transform: translateX(0);
+        transform: translateX(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateX( - 20px);
+        transform: translateX( - 20px)
+    }
+}@keyframes fadeOutLeft {
+    0 % {
+        opacity: 1; - abapsoft - transform: translateX(0); - ms - transform: translateX(0);
+        transform: translateX(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateX( - 20px); - ms - transform: translateX( - 20px);
+        transform: translateX( - 20px)
+    }
+}.fadeOutLeft { - abapsoft - animation - name: fadeOutLeft;
+    animation - name: fadeOutLeft
+}@ - abapsoft - keyframes fadeOutLeftBig {
+    0 % {
+        opacity: 1; - abapsoft - transform: translateX(0);
+        transform: translateX(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateX( - 2000px);
+        transform: translateX( - 2000px)
+    }
+}@keyframes fadeOutLeftBig {
+    0 % {
+        opacity: 1; - abapsoft - transform: translateX(0); - ms - transform: translateX(0);
+        transform: translateX(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateX( - 2000px); - ms - transform: translateX( - 2000px);
+        transform: translateX( - 2000px)
+    }
+}.fadeOutLeftBig { - abapsoft - animation - name: fadeOutLeftBig;
+    animation - name: fadeOutLeftBig
+}@ - abapsoft - keyframes fadeOutRight {
+    0 % {
+        opacity: 1; - abapsoft - transform: translateX(0);
+        transform: translateX(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateX(20px);
+        transform: translateX(20px)
+    }
+}@keyframes fadeOutRight {
+    0 % {
+        opacity: 1; - abapsoft - transform: translateX(0); - ms - transform: translateX(0);
+        transform: translateX(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateX(20px); - ms - transform: translateX(20px);
+        transform: translateX(20px)
+    }
+}.fadeOutRight { - abapsoft - animation - name: fadeOutRight;
+    animation - name: fadeOutRight
+}@ - abapsoft - keyframes fadeOutRightBig {
+    0 % {
+        opacity: 1; - abapsoft - transform: translateX(0);
+        transform: translateX(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateX(2000px);
+        transform: translateX(2000px)
+    }
+}@keyframes fadeOutRightBig {
+    0 % {
+        opacity: 1; - abapsoft - transform: translateX(0); - ms - transform: translateX(0);
+        transform: translateX(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateX(2000px); - ms - transform: translateX(2000px);
+        transform: translateX(2000px)
+    }
+}.fadeOutRightBig { - abapsoft - animation - name: fadeOutRightBig;
+    animation - name: fadeOutRightBig
+}@ - abapsoft - keyframes fadeOutUp {
+    0 % {
+        opacity: 1; - abapsoft - transform: translateY(0);
+        transform: translateY(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateY( - 20px);
+        transform: translateY( - 20px)
+    }
+}@keyframes fadeOutUp {
+    0 % {
+        opacity: 1; - abapsoft - transform: translateY(0); - ms - transform: translateY(0);
+        transform: translateY(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateY( - 20px); - ms - transform: translateY( - 20px);
+        transform: translateY( - 20px)
+    }
+}.fadeOutUp { - abapsoft - animation - name: fadeOutUp;
+    animation - name: fadeOutUp
+}@ - abapsoft - keyframes fadeOutUpBig {
+    0 % {
+        opacity: 1; - abapsoft - transform: translateY(0);
+        transform: translateY(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateY( - 2000px);
+        transform: translateY( - 2000px)
+    }
+}@keyframes fadeOutUpBig {
+    0 % {
+        opacity: 1; - abapsoft - transform: translateY(0); - ms - transform: translateY(0);
+        transform: translateY(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateY( - 2000px); - ms - transform: translateY( - 2000px);
+        transform: translateY( - 2000px)
+    }
+}.fadeOutUpBig { - abapsoft - animation - name: fadeOutUpBig;
+    animation - name: fadeOutUpBig
+}@ - abapsoft - keyframes flip {
+    0 % { - abapsoft - transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
+        transform: perspective(400px) translateZ(0) rotateY(0) scale(1)
+    }
+    0 % ,
+    40 % { - abapsoft - animation - timing -
+        function: ease - out;
+        animation - timing -
+        function: ease - out
+    }
+    40 % { - abapsoft - transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
+        transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1)
+    }
+    50 % { - abapsoft - transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+        transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1); - abapsoft - animation - timing -
+        function: ease - in;
+        animation - timing -
+        function: ease - in
+    }
+    80 % { - abapsoft - transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);
+        transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95)
+    }
+    80 % ,
+    100 % { - abapsoft - animation - timing -
+        function: ease - in;
+        animation - timing -
+        function: ease - in
+    }
+    100 % { - abapsoft - transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
+        transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1)
+    }
+}@keyframes flip {
+    0 % { - abapsoft - transform: perspective(400px) translateZ(0) rotateY(0) scale(1); - ms - transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
+        transform: perspective(400px) translateZ(0) rotateY(0) scale(1)
+    }
+    0 % ,
+    40 % { - abapsoft - animation - timing -
+        function: ease - out;
+        animation - timing -
+        function: ease - out
+    }
+    40 % { - abapsoft - transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1); - ms - transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
+        transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1)
+    }
+    50 % { - abapsoft - transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1); - ms - transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+        transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1); - abapsoft - animation - timing -
+        function: ease - in;
+        animation - timing -
+        function: ease - in
+    }
+    80 % { - abapsoft - transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95); - ms - transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);
+        transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95)
+    }
+    80 % ,
+    100 % { - abapsoft - animation - timing -
+        function: ease - in;
+        animation - timing -
+        function: ease - in
+    }
+    100 % { - abapsoft - transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1); - ms - transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
+        transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1)
+    }
+}.animated.flip { - abapsoft - backface - visibility: visible; - ms - backface - visibility: visible;
+    backface - visibility: visible; - abapsoft - animation - name: flip;
+    animation - name: flip
+}@ - abapsoft - keyframes flipInX {
+    0 % { - abapsoft - transform: perspective(400px) rotateX(90deg);
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0
+    }
+    40 % { - abapsoft - transform: perspective(400px) rotateX( - 10deg);
+        transform: perspective(400px) rotateX( - 10deg)
+    }
+    70 % { - abapsoft - transform: perspective(400px) rotateX(10deg);
+        transform: perspective(400px) rotateX(10deg)
+    }
+    100 % { - abapsoft - transform: perspective(400px) rotateX(0);
+        transform: perspective(400px) rotateX(0);
+        opacity: 1
+    }
+}@keyframes flipInX {
+    0 % { - abapsoft - transform: perspective(400px) rotateX(90deg); - ms - transform: perspective(400px) rotateX(90deg);
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0
+    }
+    40 % { - abapsoft - transform: perspective(400px) rotateX( - 10deg); - ms - transform: perspective(400px) rotateX( - 10deg);
+        transform: perspective(400px) rotateX( - 10deg)
+    }
+    70 % { - abapsoft - transform: perspective(400px) rotateX(10deg); - ms - transform: perspective(400px) rotateX(10deg);
+        transform: perspective(400px) rotateX(10deg)
+    }
+    100 % { - abapsoft - transform: perspective(400px) rotateX(0); - ms - transform: perspective(400px) rotateX(0);
+        transform: perspective(400px) rotateX(0);
+        opacity: 1
+    }
+}.flipInX { - abapsoft - backface - visibility: visible ! important; - ms - backface - visibility: visible ! important;
+    backface - visibility: visible ! important; - abapsoft - animation - name: flipInX;
+    animation - name: flipInX
+}@ - abapsoft - keyframes flipInY {
+    0 % { - abapsoft - transform: perspective(400px) rotateY(90deg);
+        transform: perspective(400px) rotateY(90deg);
+        opacity: 0
+    }
+    40 % { - abapsoft - transform: perspective(400px) rotateY( - 10deg);
+        transform: perspective(400px) rotateY( - 10deg)
+    }
+    70 % { - abapsoft - transform: perspective(400px) rotateY(10deg);
+        transform: perspective(400px) rotateY(10deg)
+    }
+    100 % { - abapsoft - transform: perspective(400px) rotateY(0);
+        transform: perspective(400px) rotateY(0);
+        opacity: 1
+    }
+}@keyframes flipInY {
+    0 % { - abapsoft - transform: perspective(400px) rotateY(90deg); - ms - transform: perspective(400px) rotateY(90deg);
+        transform: perspective(400px) rotateY(90deg);
+        opacity: 0
+    }
+    40 % { - abapsoft - transform: perspective(400px) rotateY( - 10deg); - ms - transform: perspective(400px) rotateY( - 10deg);
+        transform: perspective(400px) rotateY( - 10deg)
+    }
+    70 % { - abapsoft - transform: perspective(400px) rotateY(10deg); - ms - transform: perspective(400px) rotateY(10deg);
+        transform: perspective(400px) rotateY(10deg)
+    }
+    100 % { - abapsoft - transform: perspective(400px) rotateY(0); - ms - transform: perspective(400px) rotateY(0);
+        transform: perspective(400px) rotateY(0);
+        opacity: 1
+    }
+}.flipInY { - abapsoft - backface - visibility: visible ! important; - ms - backface - visibility: visible ! important;
+    backface - visibility: visible ! important; - abapsoft - animation - name: flipInY;
+    animation - name: flipInY
+}@ - abapsoft - keyframes flipOutX {
+    0 % { - abapsoft - transform: perspective(400px) rotateX(0);
+        transform: perspective(400px) rotateX(0);
+        opacity: 1
+    }
+    100 % { - abapsoft - transform: perspective(400px) rotateX(90deg);
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0
+    }
+}@keyframes flipOutX {
+    0 % { - abapsoft - transform: perspective(400px) rotateX(0); - ms - transform: perspective(400px) rotateX(0);
+        transform: perspective(400px) rotateX(0);
+        opacity: 1
+    }
+    100 % { - abapsoft - transform: perspective(400px) rotateX(90deg); - ms - transform: perspective(400px) rotateX(90deg);
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0
+    }
+}.flipOutX { - abapsoft - animation - name: flipOutX;
+    animation - name: flipOutX; - abapsoft - backface - visibility: visible ! important; - ms - backface - visibility: visible ! important;
+    backface - visibility: visible ! important
+}@ - abapsoft - keyframes flipOutY {
+    0 % { - abapsoft - transform: perspective(400px) rotateY(0);
+        transform: perspective(400px) rotateY(0);
+        opacity: 1
+    }
+    100 % { - abapsoft - transform: perspective(400px) rotateY(90deg);
+        transform: perspective(400px) rotateY(90deg);
+        opacity: 0
+    }
+}@keyframes flipOutY {
+    0 % { - abapsoft - transform: perspective(400px) rotateY(0); - ms - transform: perspective(400px) rotateY(0);
+        transform: perspective(400px) rotateY(0);
+        opacity: 1
+    }
+    100 % { - abapsoft - transform: perspective(400px) rotateY(90deg); - ms - transform: perspective(400px) rotateY(90deg);
+        transform: perspective(400px) rotateY(90deg);
+        opacity: 0
+    }
+}.flipOutY { - abapsoft - backface - visibility: visible ! important; - ms - backface - visibility: visible ! important;
+    backface - visibility: visible ! important; - abapsoft - animation - name: flipOutY;
+    animation - name: flipOutY
+}@ - abapsoft - keyframes lightSpeedIn {
+    0 % { - abapsoft - transform: translateX(100 % ) skewX( - 30deg);
+        transform: translateX(100 % ) skewX( - 30deg);
+        opacity: 0
+    }
+    60 % { - abapsoft - transform: translateX( - 20 % ) skewX(30deg);
+        transform: translateX( - 20 % ) skewX(30deg);
+        opacity: 1
+    }
+    80 % { - abapsoft - transform: translateX(0 % ) skewX( - 15deg);
+        transform: translateX(0 % ) skewX( - 15deg);
+        opacity: 1
+    }
+    100 % { - abapsoft - transform: translateX(0 % ) skewX(0);
+        transform: translateX(0 % ) skewX(0);
+        opacity: 1
+    }
+}@keyframes lightSpeedIn {
+    0 % { - abapsoft - transform: translateX(100 % ) skewX( - 30deg); - ms - transform: translateX(100 % ) skewX( - 30deg);
+        transform: translateX(100 % ) skewX( - 30deg);
+        opacity: 0
+    }
+    60 % { - abapsoft - transform: translateX( - 20 % ) skewX(30deg); - ms - transform: translateX( - 20 % ) skewX(30deg);
+        transform: translateX( - 20 % ) skewX(30deg);
+        opacity: 1
+    }
+    80 % { - abapsoft - transform: translateX(0 % ) skewX( - 15deg); - ms - transform: translateX(0 % ) skewX( - 15deg);
+        transform: translateX(0 % ) skewX( - 15deg);
+        opacity: 1
+    }
+    100 % { - abapsoft - transform: translateX(0 % ) skewX(0); - ms - transform: translateX(0 % ) skewX(0);
+        transform: translateX(0 % ) skewX(0);
+        opacity: 1
+    }
+}.lightSpeedIn { - abapsoft - animation - name: lightSpeedIn;
+    animation - name: lightSpeedIn; - abapsoft - animation - timing -
+    function: ease - out;
+    animation - timing -
+    function: ease - out
+}@ - abapsoft - keyframes lightSpeedOut {
+    0 % { - abapsoft - transform: translateX(0 % ) skewX(0);
+        transform: translateX(0 % ) skewX(0);
+        opacity: 1
+    }
+    100 % { - abapsoft - transform: translateX(100 % ) skewX( - 30deg);
+        transform: translateX(100 % ) skewX( - 30deg);
+        opacity: 0
+    }
+}@keyframes lightSpeedOut {
+    0 % { - abapsoft - transform: translateX(0 % ) skewX(0); - ms - transform: translateX(0 % ) skewX(0);
+        transform: translateX(0 % ) skewX(0);
+        opacity: 1
+    }
+    100 % { - abapsoft - transform: translateX(100 % ) skewX( - 30deg); - ms - transform: translateX(100 % ) skewX( - 30deg);
+        transform: translateX(100 % ) skewX( - 30deg);
+        opacity: 0
+    }
+}.lightSpeedOut { - abapsoft - animation - name: lightSpeedOut;
+    animation - name: lightSpeedOut; - abapsoft - animation - timing -
+    function: ease - in;
+    animation - timing -
+    function: ease - in
+}@ - abapsoft - keyframes rotateIn {
+    0 % { - abapsoft - transform: rotate( - 200deg);
+        transform: rotate( - 200deg);
+        opacity: 0
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: center center;
+        transform - origin: center center
+    }
+    100 % { - abapsoft - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+}@keyframes rotateIn {
+    0 % { - abapsoft - transform: rotate( - 200deg); - ms - transform: rotate( - 200deg);
+        transform: rotate( - 200deg);
+        opacity: 0
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: center center; - ms - transform - origin: center center;
+        transform - origin: center center
+    }
+    100 % { - abapsoft - transform: rotate(0); - ms - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+}.rotateIn { - abapsoft - animation - name: rotateIn;
+    animation - name: rotateIn
+}@ - abapsoft - keyframes rotateInDownLeft {
+    0 % { - abapsoft - transform: rotate( - 90deg);
+        transform: rotate( - 90deg);
+        opacity: 0
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: left bottom;
+        transform - origin: left bottom
+    }
+    100 % { - abapsoft - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+}@keyframes rotateInDownLeft {
+    0 % { - abapsoft - transform: rotate( - 90deg); - ms - transform: rotate( - 90deg);
+        transform: rotate( - 90deg);
+        opacity: 0
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: left bottom; - ms - transform - origin: left bottom;
+        transform - origin: left bottom
+    }
+    100 % { - abapsoft - transform: rotate(0); - ms - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+}.rotateInDownLeft { - abapsoft - animation - name: rotateInDownLeft;
+    animation - name: rotateInDownLeft
+}@ - abapsoft - keyframes rotateInDownRight {
+    0 % { - abapsoft - transform: rotate(90deg);
+        transform: rotate(90deg);
+        opacity: 0
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: right bottom;
+        transform - origin: right bottom
+    }
+    100 % { - abapsoft - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+}@keyframes rotateInDownRight {
+    0 % { - abapsoft - transform: rotate(90deg); - ms - transform: rotate(90deg);
+        transform: rotate(90deg);
+        opacity: 0
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: right bottom; - ms - transform - origin: right bottom;
+        transform - origin: right bottom
+    }
+    100 % { - abapsoft - transform: rotate(0); - ms - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+}.rotateInDownRight { - abapsoft - animation - name: rotateInDownRight;
+    animation - name: rotateInDownRight
+}@ - abapsoft - keyframes rotateInUpLeft {
+    0 % { - abapsoft - transform: rotate(90deg);
+        transform: rotate(90deg);
+        opacity: 0
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: left bottom;
+        transform - origin: left bottom
+    }
+    100 % { - abapsoft - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+}@keyframes rotateInUpLeft {
+    0 % { - abapsoft - transform: rotate(90deg); - ms - transform: rotate(90deg);
+        transform: rotate(90deg);
+        opacity: 0
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: left bottom; - ms - transform - origin: left bottom;
+        transform - origin: left bottom
+    }
+    100 % { - abapsoft - transform: rotate(0); - ms - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+}.rotateInUpLeft { - abapsoft - animation - name: rotateInUpLeft;
+    animation - name: rotateInUpLeft
+}@ - abapsoft - keyframes rotateInUpRight {
+    0 % { - abapsoft - transform: rotate( - 90deg);
+        transform: rotate( - 90deg);
+        opacity: 0
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: right bottom;
+        transform - origin: right bottom
+    }
+    100 % { - abapsoft - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+}@keyframes rotateInUpRight {
+    0 % { - abapsoft - transform: rotate( - 90deg); - ms - transform: rotate( - 90deg);
+        transform: rotate( - 90deg);
+        opacity: 0
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: right bottom; - ms - transform - origin: right bottom;
+        transform - origin: right bottom
+    }
+    100 % { - abapsoft - transform: rotate(0); - ms - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+}.rotateInUpRight { - abapsoft - animation - name: rotateInUpRight;
+    animation - name: rotateInUpRight
+}@ - abapsoft - keyframes rotateOut {
+    0 % { - abapsoft - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: center center;
+        transform - origin: center center
+    }
+    100 % { - abapsoft - transform: rotate(200deg);
+        transform: rotate(200deg);
+        opacity: 0
+    }
+}@keyframes rotateOut {
+    0 % { - abapsoft - transform: rotate(0); - ms - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: center center; - ms - transform - origin: center center;
+        transform - origin: center center
+    }
+    100 % { - abapsoft - transform: rotate(200deg); - ms - transform: rotate(200deg);
+        transform: rotate(200deg);
+        opacity: 0
+    }
+}.rotateOut { - abapsoft - animation - name: rotateOut;
+    animation - name: rotateOut
+}@ - abapsoft - keyframes rotateOutDownLeft {
+    0 % { - abapsoft - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: left bottom;
+        transform - origin: left bottom
+    }
+    100 % { - abapsoft - transform: rotate(90deg);
+        transform: rotate(90deg);
+        opacity: 0
+    }
+}@keyframes rotateOutDownLeft {
+    0 % { - abapsoft - transform: rotate(0); - ms - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: left bottom; - ms - transform - origin: left bottom;
+        transform - origin: left bottom
+    }
+    100 % { - abapsoft - transform: rotate(90deg); - ms - transform: rotate(90deg);
+        transform: rotate(90deg);
+        opacity: 0
+    }
+}.rotateOutDownLeft { - abapsoft - animation - name: rotateOutDownLeft;
+    animation - name: rotateOutDownLeft
+}@ - abapsoft - keyframes rotateOutDownRight {
+    0 % { - abapsoft - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: right bottom;
+        transform - origin: right bottom
+    }
+    100 % { - abapsoft - transform: rotate( - 90deg);
+        transform: rotate( - 90deg);
+        opacity: 0
+    }
+}@keyframes rotateOutDownRight {
+    0 % { - abapsoft - transform: rotate(0); - ms - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: right bottom; - ms - transform - origin: right bottom;
+        transform - origin: right bottom
+    }
+    100 % { - abapsoft - transform: rotate( - 90deg); - ms - transform: rotate( - 90deg);
+        transform: rotate( - 90deg);
+        opacity: 0
+    }
+}.rotateOutDownRight { - abapsoft - animation - name: rotateOutDownRight;
+    animation - name: rotateOutDownRight
+}@ - abapsoft - keyframes rotateOutUpLeft {
+    0 % { - abapsoft - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: left bottom;
+        transform - origin: left bottom
+    }
+    100 % { - abapsoft - transform: rotate( - 90deg);
+        transform: rotate( - 90deg);
+        opacity: 0
+    }
+}@keyframes rotateOutUpLeft {
+    0 % { - abapsoft - transform: rotate(0); - ms - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: left bottom; - ms - transform - origin: left bottom;
+        transform - origin: left bottom
+    }
+    100 % { - abapsoft - transform: rotate( - 90deg); - ms - transform: rotate( - 90deg);
+        transform: rotate( - 90deg);
+        opacity: 0
+    }
+}.rotateOutUpLeft { - abapsoft - animation - name: rotateOutUpLeft;
+    animation - name: rotateOutUpLeft
+}@ - abapsoft - keyframes rotateOutUpRight {
+    0 % { - abapsoft - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: right bottom;
+        transform - origin: right bottom
+    }
+    100 % { - abapsoft - transform: rotate(90deg);
+        transform: rotate(90deg);
+        opacity: 0
+    }
+}@keyframes rotateOutUpRight {
+    0 % { - abapsoft - transform: rotate(0); - ms - transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1
+    }
+    0 % ,
+    100 % { - abapsoft - transform - origin: right bottom; - ms - transform - origin: right bottom;
+        transform - origin: right bottom
+    }
+    100 % { - abapsoft - transform: rotate(90deg); - ms - transform: rotate(90deg);
+        transform: rotate(90deg);
+        opacity: 0
+    }
+}.rotateOutUpRight { - abapsoft - animation - name: rotateOutUpRight;
+    animation - name: rotateOutUpRight
+}@ - abapsoft - keyframes slideInDown {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateY( - 2000px);
+        transform: translateY( - 2000px)
+    }
+    100 % { - abapsoft - transform: translateY(0);
+        transform: translateY(0)
+    }
+}@keyframes slideInDown {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateY( - 2000px); - ms - transform: translateY( - 2000px);
+        transform: translateY( - 2000px)
+    }
+    100 % { - abapsoft - transform: translateY(0); - ms - transform: translateY(0);
+        transform: translateY(0)
+    }
+}.slideInDown { - abapsoft - animation - name: slideInDown;
+    animation - name: slideInDown
+}@ - abapsoft - keyframes slideInLeft {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateX( - 2000px);
+        transform: translateX( - 2000px)
+    }
+    100 % { - abapsoft - transform: translateX(0);
+        transform: translateX(0)
+    }
+}@keyframes slideInLeft {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateX( - 2000px); - ms - transform: translateX( - 2000px);
+        transform: translateX( - 2000px)
+    }
+    100 % { - abapsoft - transform: translateX(0); - ms - transform: translateX(0);
+        transform: translateX(0)
+    }
+}.slideInLeft { - abapsoft - animation - name: slideInLeft;
+    animation - name: slideInLeft
+}@ - abapsoft - keyframes slideInRight {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateX(2000px);
+        transform: translateX(2000px)
+    }
+    100 % { - abapsoft - transform: translateX(0);
+        transform: translateX(0)
+    }
+}@keyframes slideInRight {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateX(2000px); - ms - transform: translateX(2000px);
+        transform: translateX(2000px)
+    }
+    100 % { - abapsoft - transform: translateX(0); - ms - transform: translateX(0);
+        transform: translateX(0)
+    }
+}.slideInRight { - abapsoft - animation - name: slideInRight;
+    animation - name: slideInRight
+}@ - abapsoft - keyframes slideOutLeft {
+    0 % { - abapsoft - transform: translateX(0);
+        transform: translateX(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateX( - 2000px);
+        transform: translateX( - 2000px)
+    }
+}@keyframes slideOutLeft {
+    0 % { - abapsoft - transform: translateX(0); - ms - transform: translateX(0);
+        transform: translateX(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateX( - 2000px); - ms - transform: translateX( - 2000px);
+        transform: translateX( - 2000px)
+    }
+}.slideOutLeft { - abapsoft - animation - name: slideOutLeft;
+    animation - name: slideOutLeft
+}@ - abapsoft - keyframes slideOutRight {
+    0 % { - abapsoft - transform: translateX(0);
+        transform: translateX(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateX(2000px);
+        transform: translateX(2000px)
+    }
+}@keyframes slideOutRight {
+    0 % { - abapsoft - transform: translateX(0); - ms - transform: translateX(0);
+        transform: translateX(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateX(2000px); - ms - transform: translateX(2000px);
+        transform: translateX(2000px)
+    }
+}.slideOutRight { - abapsoft - animation - name: slideOutRight;
+    animation - name: slideOutRight
+}@ - abapsoft - keyframes slideOutUp {
+    0 % { - abapsoft - transform: translateY(0);
+        transform: translateY(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateY( - 2000px);
+        transform: translateY( - 2000px)
+    }
+}@keyframes slideOutUp {
+    0 % { - abapsoft - transform: translateY(0); - ms - transform: translateY(0);
+        transform: translateY(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateY( - 2000px); - ms - transform: translateY( - 2000px);
+        transform: translateY( - 2000px)
+    }
+}.slideOutUp { - abapsoft - animation - name: slideOutUp;
+    animation - name: slideOutUp
+}@ - abapsoft - keyframes hinge {
+    0 % { - abapsoft - transform: rotate(0);
+        transform: rotate(0)
+    }
+    0 % ,
+    20 % ,
+    60 % { - abapsoft - transform - origin: top left;
+        transform - origin: top left; - abapsoft - animation - timing -
+        function: ease - in-out;
+        animation - timing -
+        function: ease - in-out
+    }
+    20 % ,
+    60 % { - abapsoft - transform: rotate(80deg);
+        transform: rotate(80deg)
+    }
+    40 % { - abapsoft - transform: rotate(60deg);
+        transform: rotate(60deg)
+    }
+    40 % ,
+    80 % { - abapsoft - transform - origin: top left;
+        transform - origin: top left; - abapsoft - animation - timing -
+        function: ease - in-out;
+        animation - timing -
+        function: ease - in-out
+    }
+    80 % { - abapsoft - transform: rotate(60deg) translateY(0);
+        transform: rotate(60deg) translateY(0);
+        opacity: 1
+    }
+    100 % { - abapsoft - transform: translateY(700px);
+        transform: translateY(700px);
+        opacity: 0
+    }
+}@keyframes hinge {
+    0 % { - abapsoft - transform: rotate(0); - ms - transform: rotate(0);
+        transform: rotate(0)
+    }
+    0 % ,
+    20 % ,
+    60 % { - abapsoft - transform - origin: top left; - ms - transform - origin: top left;
+        transform - origin: top left; - abapsoft - animation - timing -
+        function: ease - in-out;
+        animation - timing -
+        function: ease - in-out
+    }
+    20 % ,
+    60 % { - abapsoft - transform: rotate(80deg); - ms - transform: rotate(80deg);
+        transform: rotate(80deg)
+    }
+    40 % { - abapsoft - transform: rotate(60deg); - ms - transform: rotate(60deg);
+        transform: rotate(60deg)
+    }
+    40 % ,
+    80 % { - abapsoft - transform - origin: top left; - ms - transform - origin: top left;
+        transform - origin: top left; - abapsoft - animation - timing -
+        function: ease - in-out;
+        animation - timing -
+        function: ease - in-out
+    }
+    80 % { - abapsoft - transform: rotate(60deg) translateY(0); - ms - transform: rotate(60deg) translateY(0);
+        transform: rotate(60deg) translateY(0);
+        opacity: 1
+    }
+    100 % { - abapsoft - transform: translateY(700px); - ms - transform: translateY(700px);
+        transform: translateY(700px);
+        opacity: 0
+    }
+}.hinge { - abapsoft - animation - name: hinge;
+    animation - name: hinge
+}@ - abapsoft - keyframes rollIn {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateX( - 100 % ) rotate( - 120deg);
+        transform: translateX( - 100 % ) rotate( - 120deg)
+    }
+    100 % {
+        opacity: 1; - abapsoft - transform: translateX(0) rotate(0);
+        transform: translateX(0) rotate(0)
+    }
+}@keyframes rollIn {
+    0 % {
+        opacity: 0; - abapsoft - transform: translateX( - 100 % ) rotate( - 120deg); - ms - transform: translateX( - 100 % ) rotate( - 120deg);
+        transform: translateX( - 100 % ) rotate( - 120deg)
+    }
+    100 % {
+        opacity: 1; - abapsoft - transform: translateX(0) rotate(0); - ms - transform: translateX(0) rotate(0);
+        transform: translateX(0) rotate(0)
+    }
+}.rollIn { - abapsoft - animation - name: rollIn;
+    animation - name: rollIn
+}@ - abapsoft - keyframes rollOut {
+    0 % {
+        opacity: 1; - abapsoft - transform: translateX(0) rotate(0);
+        transform: translateX(0) rotate(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateX(100 % ) rotate(120deg);
+        transform: translateX(100 % ) rotate(120deg)
+    }
+}@keyframes rollOut {
+    0 % {
+        opacity: 1; - abapsoft - transform: translateX(0) rotate(0); - ms - transform: translateX(0) rotate(0);
+        transform: translateX(0) rotate(0)
+    }
+    100 % {
+        opacity: 0; - abapsoft - transform: translateX(100 % ) rotate(120deg); - ms - transform: translateX(100 % ) rotate(120deg);
+        transform: translateX(100 % ) rotate(120deg)
+    }
+}.rollOut { - abapsoft - animation - name: rollOut;
+    animation - name: rollOut
+}

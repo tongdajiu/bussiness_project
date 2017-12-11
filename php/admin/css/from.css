@@ -1,0 +1,55 @@
+.regSteps{height:23px;}
+.regSteps li{display:inline-block; float:left; background:#E4E4E4 url(../images/regStepArrow2.gif) right center no-repeat; font-size:14px; font-weight:bold; color:#404040; height:23px; line-height:23px; width:33.3%; text-align:center;}
+.regSteps li#stepLast{background:#E4E4E4;}
+.regSteps li.current{background:#F60 url(../images/regStepArrow1.gif) right center no-repeat; color:#FFF;}
+.regSteps li.passed{background:#FFE6BA url(../images/regStepArrow3.gif) right center no-repeat; color:#F60;}
+.regSteps li.passed_no1{background:#FFE6BA url(../images/regStepArrow4.gif) right center no-repeat;}
+.regSteps li#stepLast.current_no1{background:#F60;}
+.regInfo ul{padding:8px 0;width:900px;list-style: none;}
+.regInfo li{padding-bottom:8px; color:#333; font-size:14px;line-height:24px;}
+.regInfo li a{color:#098BCD;}
+.regInfo li label{}
+.regInfo dl.ott{padding:12px 0; border-bottom:1px solid #DDD;}
+.regInfo dl.ott#third{border-bottom:none;}
+.regInfo dl.ott dt{background:url(../images/stepRound.gif) left center no-repeat; height:24px; line-height:24px;}
+.regInfo dl.ott dt span{color:#FFF; padding:0 16px 0 8px;}
+.regInfo dl.ott dd .ottList label.labelName{clear:both;text-align:right; width:200px; display:inline-block; color:#585858; float:left; padding:0 12px 0 0; vertical-align:middle; font-size:14px;}
+.regInfo dl.ott dd .regTxt{float:left; display:inline-block; padding:3px 4px; width:320px; border:1px solid #CCC;}
+.regInfo dl.ott dd select{width:330px; padding:4px;}
+.regInfo dl.ott dd .narrow{width:100px;}
+.regInfo dl.ott dd .addInfo{display:inline-block; float:left; padding:4px 0 0 6px; color:#999;}
+.ottTips{clear:both;margin-left:212px;color:#666;font-size:12px;}
+
+p.continue{padding:10px 0 10px 212px;}
+p.continue input{display:inline-block;padding:8px 12px;margin:2px 1px;background:#aaa;color:#fff;border-radius:2px;border:none;cursor:pointer;background:#6fb3e0;}
+p.continue input:hover{background:#589dca;}
+p.continue input:last-child{background:#aaa;}
+p.continue input:last-child:hover{background:#888;}
+p.continue input.btn-blue{display:inline-block;padding:8px 12px;margin:2px 1px;background:#aaa;color:#fff;border-radius:2px;border:none;cursor:pointer;background:#6fb3e0;}
+p.continue input.btn-blue:hover{background:#589dca;}
+.clear{CLEAR:both;OVERFLOW:hidden;WIDTH:100%;HEIGHT:0px;overflow:hidden}
+
+.add-property{padding:2px;}
+
+.error_tips,label.error{font-size:12px;color:red;line-height:23px;padding-left:5px;}
+input.error,textarea.error{border-color:red!important;}
+
+#btn-data-save,#btn-data-cancel{border:1px solid #C4CCCC;border-right:1px solid #AEB7B4;padding: 4px 8px;font-weight:bold;font-size: 12px;color: #333;background:#F8EFAE;background:-webkit-gradient(linear,0 0,0 bottom,from(#F8EFAE),to(#F1D557));background:-moz-linear-gradient(#F8EFAE,#F1D557);background:linear-gradient(#F8EFAE,#F1D557);filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#F8EFAE,endColorStr=#F1D557);-webkit-box-shadow:1px 1px 3px #6F7777;cursor:pointer}
+
+.wdatePicker{width:100px;padding:3px 4px;border:1px solid #CCC;background:url(../../res/images/calendar-blue.gif) no-repeat 88px 3px;}
+
+/*异步上传图片*/
+.fileupload{position:relative;border:1px solid #ddd;}
+.fileupload_tips{display:none;position:absolute;z-index:9997;width:100%;height:100%;background:rgba(0,0,0,0.6);color:#fff;text-align:center;font-size:12px;}
+.fileupload:hover .fileupload_tips{display:block;}
+.fileupload_loading{display:none;position:absolute;z-index:9998;width:100%;height:100%;background:url(../../res/images/ajax-loader-85.gif) center center no-repeat;background-size:80% 80%;background-color:#fff;}
+.fileupload.noneImg .fileupload_tips{display:block;}
+.fileupload_img,.fileupload_img img{position:absolute;width:100%;height:100%;border:none;}
+#fileupload{opacity:0;_filter:alpha(opacity=0);position:absolute;z-index:9999;width:100%;height:100%;cursor:pointer;}
+
+.checkbox_group dl{float:left;min-width:330px;max-width:680px;margin-bottom:20px;color:#585858;font-size:14px;}
+.checkbox_group label{display:inline-block;}
+.checkbox_group input[type="checkbox"]{vertical-align:middle;margin-right:3px;}
+.checkbox_group dt{background:#ebebeb!important;padding:4px 10px;font-size:14px;}
+.checkbox_group dd{margin-bottom:10px;border:1px solid #ebebeb;padding:5px 20px;}
+.checkbox_group dd label input{margin:8px 5px;}

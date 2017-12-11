@@ -1,0 +1,335 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Forms</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/ext-all.css"/>
+
+    <!-- GC -->
+    <!-- LIBS -->
+    <script type="text/javascript" src="adapter/ext/ext-base.js"></script>
+
+    <!-- ENDLIBS -->
+
+    <script type="text/javascript" src="ext-all.js"></script>
+
+    <script>
+
+var tree;
+var win;
+
+/*!
+ * Ext JS Library 3.3.1
+ * Copyright(c) 2006-2010 Sencha Inc.
+ * licensing@sencha.com
+ * http://www.sencha.com/license
+ */
+Ext.onReady(function(){
+
+    Ext.QuickTips.init();
+	
+	
+var menu = new Ext.menu.Menu({
+        id: 'mainMenu',
+        style: {
+            overflow: 'visible'     // For the Combo popup
+        }
+		});
+		
+var menu2 = new Ext.menu.Menu({
+        id: 'mainMenu2',
+        style: {
+            overflow: 'visible'     // For the Combo popup
+        }
+		});
+		
+var item = menu.add({
+        text: 'Dynamically added Item'
+    });
+    // items support full Observable API
+    item.on('click', onItemClick);
+
+	
+	item = menu.add({
+        text: 'Dynamically added Item2'
+    });
+    // items support full Observable API
+    item.on('click', onItemClick);
+
+	//menu.addSeparator();
+	
+	
+
+     item = menu2.add({
+        text: 'Dynamically added Item'
+    });
+    // items support full Observable API
+    item.on('click', onItemClick);
+
+	
+	item = menu2.add({
+        text: 'Dynamically added Item2'
+    });
+    // items support full Observable API
+    item.on('click', onItemClick);
+
+		
+	
+	
+
+    // turn on validation errors beside the field globally
+    Ext.form.Field.prototype.msgTarget = 'side';
+
+    var bd = Ext.getBody();
+
+
+    var top = new Ext.FormPanel({
+        labelAlign: 'top',
+        frame:true,
+        title: 'Multi Column, Nested Layouts and Anchoring',
+        bodyStyle:'padding:5px 5px 0',
+        width: 600,
+        items: [
+		{xtype:'spacer',height:20},
+		{
+			layout:'column',
+			items:[
+				
+				{xtype:"button", text:"按钮1", width:90, height:50},  
+				{xtype:'spacer',width:50, height:1},
+				{xtype:"button", text:"按钮2", width:90, height:50}
+				
+
+			]
+		},
+		
+		{
+            xtype:'fieldset',
+			title:'测试abcd',
+			items:[{xtype:'textfield'},{xtype:'textfield'}]
+        },
+		
+		{
+            xtype:'textarea',
+            id:'bio',
+           
+            height:200,
+            anchor:'98%'
+        }],
+
+        buttons: [{
+            text: 'Save'
+        },{
+            text: 'Cancel'
+        }],
+		
+		tbar: [{
+			text: '  Formula  ',
+			menu: menu
+		  },{
+			text: '  Formula2  ',
+			menu: menu2
+		  }]
+
+    });
+	
+
+    //top.render(document.body);
+	top.render('main_win');
+	
+	
+
+});
+
+
+
+
+
+
+
+
+
+//----------------------------------------------------------------------	
+
+        var sys_tabs = new Ext.TabPanel({
+			id:'sys_tabs',
+            region: 'center',
+            margins:'3 3 3 0', 
+            activeTab: 0,
+            defaults:{autoScroll:true},
+
+            items:[
+			{
+                title: 'aa Tab',
+                html: 'test1'
+            }
+			
+			,{
+                title: 'bb Tab',
+                html: 'test2'
+            }
+			]
+        });
+		
+		var dbcfg_tabs = new Ext.TabPanel({
+			id:'dbcfg_tabs',
+            region: 'center',
+            margins:'3 3 3 0', 
+            activeTab: 0,
+            defaults:{autoScroll:true},
+
+            items:[
+			{
+                title: 'cc Tab',
+                html: 'test1'
+            }
+			
+			,{
+                title: 'ddd Tab',
+                html: 'test2'
+            }
+			]
+        });
+
+//----------------------------------------------------------------------	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function onItemClick(item){
+	
+	openCfgWin();
+	
+  }
+  //-------------------------------------------------------
+
+  
+  
+  function openCfgWin(){
+  
+  
+  
+  
+
+//----------------------------------------------------------------------	
+	tree = new Ext.tree.TreePanel({
+    region: 'west',
+     animate:true, 
+                autoScroll:true,
+                enableDD:true,
+                //loader: new Ext.tree.TreeLoader({dataUrl:'a.txt'}),
+				containerScroll: true,
+				border: false,
+                width: 250,
+                height: 300,
+				dropConfig: {appendOnly:true}
+
+});
+
+            //new Ext.tree.TreeSorter(tree, {folderSort:true});
+            
+            // set the root node
+            var root = new Ext.tree.AsyncTreeNode({
+                text: 'Ext JS', 
+                draggable:false, // disable root node dragging
+                id:'src',
+				expanded:true,
+				children: [{
+                text: 'Menu Option 1',
+					leaf: true
+				}, {
+					text: 'Menu Option 2',
+					leaf: true
+				}, {
+					text: 'Menu Option 3',
+					leaf: true
+				}]
+
+            });
+            tree.setRootNode(root);
+            
+            
+            root.expand(false, false);
+             	
+			tree.addListener('click', function (node, event){
+				//alert(node.attributes.id+'='+node.attributes.text);
+				
+				
+				win.get('cfgMainFrame').removeAll();
+				win.get('cfgMainFrame').add( dbcfg_tabs );
+				
+				win.doLayout();
+				
+				
+			});
+			
+
+			
+
+		var cfgMainFrame = new Ext.form.FormPanel({
+			id:'cfgMainFrame',
+			region:'center',
+			autoHeight:true,
+			autoWidth:true,
+			border: false
+		});
+		
+		cfgMainFrame.add( sys_tabs );
+	
+
+        win = new Ext.Window({
+            title: 'Layout Window',
+            closable:true,
+            width:600,
+            height:350,
+            //border:false,
+            plain:true,
+            layout: 'border',
+			//layout:'table',
+
+            items: [tree, cfgMainFrame]
+        });
+ 
+		
+  
+  
+  
+  
+  
+  
+        win.show(this);
+		
+}		
+  
+
+   </script>
+</head>
+<body>
+
+<!-- EXAMPLES -->
+<br/><br/><br/><br/>
+<div id="main_win" align="center"></div>
+
+</body>
+</html>
